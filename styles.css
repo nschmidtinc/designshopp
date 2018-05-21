@@ -1,0 +1,1132 @@
+
+* Sample color palette */
+
+
+
+:root {
+  --medium: 1150px
+  --yellow: #fecf33;
+  --light-orange: #fdbd39;
+  --peach: #ee6723;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  background-color: #ececec;
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+
+}
+body{
+  background-color: #ececec;
+}
+/* Grid system! */
+.row {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex; /* This will allow our row to display columns horizontally */
+  flex-wrap: wrap; /* This will become necessary to allow our flex boxes to stack in responsive mode */
+}
+
+/* Small and up columns */
+
+/* If an element needs all twelve columns, then its width is 100%. Easy. */
+.col-small-12 {
+  width: 100%;
+}
+/* If an element needs 11 of 12 columns, its width is 11/12 * 100% */
+.col-small-11 {
+  width: 91.666%;
+}
+.col-small-10 {
+  width: 83.333%;
+}
+.col-small-9 {
+  width: 75%;
+}
+.col-small-8 {
+  width: 66.666%;
+}
+.col-small-7 {
+  width: 58.333%;
+}
+/* This is the class we'd use if we want two 50/50 elements next to each other */
+.col-small-6 {
+  width: 50%;
+}
+.col-small-5 {
+  width: 41.666%;
+}
+/* This is the class we'd use if we want three elements next to each other */
+.col-small-4 {
+  width: 33.333%;
+}
+/* This is the class we'd use if we want four elements next to each other */
+.col-small-3 {
+  width: 25%;
+}
+.col-small-2 {
+  width: 16.666%;
+}
+/* We'll almost NEVER use this */
+.col-small-1 {
+  width: 8.333%;
+}
+
+/* Medium and up screen sizes */
+@media only screen and (min-width: 641px) {
+.col-medium-12 {
+    width: 100%;
+}
+/* If an element needs 11 of 12 columns, its width is 11/12 * 100% */
+.col-medium-11 {
+    width: 91.666%;
+}
+.col-medium-10 {
+    width: 83.333%;
+}
+.col-medium-9 {
+    width: 75%;
+}
+.col-medium-8 {
+    width: 66.666%;
+}
+.col-medium-7 {
+    width: 58.333%;
+}
+/* This is the class we'd use if we want two 50/50 elements next to each other */
+.col-medium-6 {
+    width: 50%;
+}
+.col-medium-5 {
+    width: 41.666%;
+}
+/* This is the class we'd use if we want three elements next to each other */
+.col-medium-4 {
+    width: 33.333%;
+}
+/* This is the class we'd use if we want four elements next to each other */
+.col-medium-3 {
+    width: 25%;
+}
+.col-medium-2 {
+    width: 16.666%;
+}
+/* We'll almost NEVER use this */
+.col-medium-1 {
+    width: 8.333%;
+}
+
+}
+
+
+
+
+/* Large screen sizes */
+@media only screen and (min-width: 1025px) {
+.col-large-12 {
+    width: 100%;
+}
+/* If an element needs 11 of 12 columns, its width is 11/12 * 100% */
+.col-large-11 {
+    width: 91.666%;
+}
+.col-large-10 {
+    width: 83.333%;
+}
+.col-large-9 {
+    width: 75%;
+}
+.col-large-8 {
+    width: 66.666%;
+}
+.col-large-7 {
+    width: 58.333%;
+}
+/* This is the class we'd use if we want two 50/50 elements next to each other */
+.col-large-6 {
+    width: 50%;
+}
+.col-large-5 {
+    width: 41.666%;
+}
+/* This is the class we'd use if we want three elements next to each other */
+.col-large-4 {
+    width: 33.333%;
+}
+/* This is the class we'd use if we want four elements next to each other */
+.col-large-3 {
+    width: 25%;
+}
+.col-large-2 {
+    width: 16.666%;
+}
+/* We'll almost NEVER use this */
+.col-large-1 {
+    width: 8.333%;
+}
+
+}
+
+body {
+
+
+}
+p {
+  display: inline-block;
+}
+/*header styles*/
+.container {
+  display: flex;
+
+  flex-direction: column;
+
+  z-index: -100;
+}
+
+.Rectangle {
+  max-height: 10rem;
+  background-color: #ffffff;
+  display: flex;
+  
+ 
+  margin-top: -1rem;
+  z-index: 120;
+  align-items: center;
+  position: fixed;
+  min-height: 10rem;
+  max-height: 12vh;
+
+}@media only screen and (min-width: 1200px) {
+  .Rectangle {
+    justify-content: space-between;
+  }
+
+  .Behind-the-Scene-Eve {
+    font-family: "Oswald";
+    flex-direction: row;
+  
+    font-size: 1.2vw;
+    margin: 1rem;
+    width: 15rem;
+    font-weight: 600;
+    letter-spacing: 1.414286px;
+    text-align: center;
+    
+    white-space: nowrap;
+    color: #000000;
+  
+    
+  }
+
+  
+}
+.Behind-the-Scene-Eve {
+  font-family: "Oswald";
+  flex-direction: row;
+
+  font-size: 1.2vw;
+  margin:0rem;
+  
+  font-weight: 600;
+  letter-spacing: 1.414286px;
+  text-align: center;
+  
+  white-space: nowrap;
+  color: #000000;
+
+  
+}@media only screen and (min-width: 900px){
+  .Behind-the-Scene-Eve {
+    margin:1rem;
+  }
+}
+
+
+.Banner {
+  background-image: url(img/14.png);
+  background-size: cover;
+  background-repeat: no-repeat;        
+  position: center; 
+  margin-top: 9rem;
+  margin-right: 0;
+  
+  min-width: 100%;
+
+  height: 86vh;
+}
+.Banner2 {
+  background-image: url(img/11.png);
+  background-size: cover;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 86vh;
+  margin-top: 10rem;
+} 
+img{
+  max-width: 100%;
+}
+.side-nav-link:active::before {
+  background-color: var(--color-primary-light);
+font-family: "Oswald"; }
+.side-nav-link, .side-navlink:visited {
+  
+ 
+  font-family:"Oswald";
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+   }
+.font-box-div {
+  margin-top: 25.5vh;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Oswald";
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 0.375rem;
+  margin-left: 22vw;
+}
+.font-box {
+  font-family: "Oswald", sans-serif;
+  display: block;
+  font-size: 9vw;
+  line-height: 0.8;
+  margin: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 6px;
+  text-align: left;
+  color: #000000;
+}
+.text-box-1 {
+  background-color: #ffffff;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38.25rem;
+  height: 25.8125rem;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  margin-left: -3.7rem;
+}
+.text-box-h3 {
+  font-size: 36px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  align-self: flex-start;
+  z-index: 2;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5900000333786011px;
+  text-align: left;
+  color: #000000;
+}
+.text-quote{
+  font-size: 120px;
+}
+.burb-h3{
+  display: inline-block;
+  margin: 0;
+}
+blockquote {
+  
+  color: black;
+  quotes: "\201C";
+  font-family: "Oswald";
+  margin-bottom:-2rem;
+}
+blockquote:before {
+
+  content: open-quote;
+  font-size: 12em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+ 
+}
+blockquote p {
+  display: inline;
+}
+.text-box-h3-montage {
+  content: "\201C";
+ 
+ 
+  font-size: 36px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  align-self: flex-start;
+  z-index: 2;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5900000333786011px;
+  text-align: left;
+  color: #000000;
+}
+.follow {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex: 0;
+  justify-content: center;
+}@media only screen and (max-height: 1000px) {
+ 
+ .follow{
+   height: 100vh;
+ } 
+
+  
+}
+.follow-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -14rem;
+}
+.followme-div {
+  display: flex;
+  padding: 10rem;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -41rem;
+}@media only screen and (max-width: 1200px){
+  .followme-div{margin-top: -40rem;
+  z-index: 120;
+  padding-bottom: 16rem;
+  }
+}
+.photo-album-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.album-1 {
+  width: 17.5625rem;
+  height: 17.5625rem;
+  margin: 2rem;
+  position: relative;
+  z-index: 5;
+}
+.album-1-ball {
+  width: 17.5625rem;
+  height: 17.5625rem;
+  margin: -19rem;
+  position: relative;
+  transform: translatey(-31rem);
+  z-index: 99;
+}
+.album-1-ball {
+  width: 17.5625rem;
+  height: 17.5625rem;
+  margin: -19rem;
+  position: relative;
+  transform: translatey(-31rem);
+  z-index: 99;
+}
+.album-1-dog {
+  width: 17.5625rem;
+  height: 17.5625rem;
+  transform: translate(36.8rem, 0.2rem);
+  margin-top: -2rem;
+}
+.album-1-wisdom {
+  width: 17.5625rem;
+  height: 17.5625rem;
+  transform: translate(-28.25rem, -14.8rem);
+}
+
+.album-1-knowledge {
+  width: 17.5625rem;
+  height: 17.5625rem;
+  z-index: 6;
+  transform: translate(-13rem, 0.4rem);
+}
+.album-2 {
+  width: 17.5625rem;
+  height: 17.5625rem;
+  position: relative;
+  
+}@media only screen and (max-width: 1200px) {
+  .album-1-dog{     
+    transform: translate(28.8rem, -0.8rem);
+  }
+  .album-1-knowledge{
+    transform: translate(-8.4rem, -0.8rem);
+  }
+  .photo-album-div{
+    padding-bottom: 10rem;
+  }
+  .album-1-wisdom{
+    transform: translate(-10.8rem, 18.2rem);
+  }
+  .album-1-ball{
+    transform: translate(12.2rem, -0.8rem);
+  }
+  
+}
+.album-top {
+}
+.follow-svg {
+  fill: currentColor;
+  align-self: center;
+}
+.photo-album-div {
+  margin-top: 10rem;
+  margin-top: -42rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email {
+  font-size: 36px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+
+  z-index: 2;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5900000333786011px;
+
+  color: #000000;
+  font-size: 36px;
+  font-weight: 400;
+
+  letter-spacing: 0.5900000333786011px;
+  text-align: center;
+  color: #000000;
+}
+.montage-div {
+  z-index: 11;
+  position: absolute;
+  margin-top: 20rem;
+  margin-left: -11.1rem;
+}
+.text-box-p {
+  font-family: "Open Sans", sans-serif;
+  width: 23.625rem;
+  position: relative;
+  height: 12.625rem;
+  max-width: 23.625rem;
+  max-height: 12.625rem;
+  font-size: 0.8rem;
+  margin: auto;
+
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4285714285714286;
+  letter-spacing: normal;
+
+  color: #4a4a4a;
+  margin: 0;
+  margin-top: 2rem;
+}
+.inner-div {
+  margin: 0;
+  padding: 0;
+}
+.heading-holder {
+  margin-top: 2rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+
+  
+}@media only screen and (max-width: 1200px) {
+  .heading-holder {background-color: #ffffff;
+   align-items: center;
+    flex-direction: column;
+    /* justify-content: space-between; */
+   
+  }
+  .Behind-the-Scene-Eve{
+    margin:0rem;
+  }
+
+  
+}
+.Logo {
+  z-index: 2;
+  align-self: center;
+  margin-top: 10.1rem;
+  width: 14rem;
+  min-width: 14rem;
+  height: 14rem;
+  min-height: 14rem;
+  margin-left: 2.6rem;
+} @media only screen and (max-width: 1200px) {
+
+  .Logo{
+    margin:0;
+  
+    max-width: 8rem;
+    max-height: 8rem;
+  } 
+
+
+@media only screen and (max-width: 1000px) {
+  .Rectanle{
+    flex-direction: column;
+  
+  }
+
+  .Logo{
+    margin:0;
+    width: 4rem;
+    height: 4rem;
+    max-width: 4rem;
+    max-height: 4rem;
+    min-height: 4rem;
+    min-width: 4rem;
+  }
+  .heading-holder{
+    flex-direction: column;
+  }
+}
+}
+
+.Signature {
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  margin-top: 43rem;
+  margin-left: 1rem;
+  height: 15rem;
+  width: 18rem;
+}
+.photos {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+}
+.profile {
+  transform: translateX(134%);
+  margin-top: -6rem;
+  width: 30rem;
+  height: 25.375rem;
+  position: absolute;
+  z-index: 4;
+}@media only screen and (max-width: 1200px) {
+  .profile {background-color: #ffffff;
+   align-items: center;
+    flex-direction: column;
+    transform: translateX(0%);
+    
+    /* justify-content: space-between; */
+   
+  }
+}
+.building {
+  margin-left: auto;
+  margin-top: 6.6rem;
+  width: 68.375rem;
+  height: 31.875rem;
+}
+.goodthings {
+  margin: 0;
+  padding: 0;
+  margin-left: 40rem;
+  margin-top: -6rem;
+}
+nav {
+  position: relative;
+  z-index: 1;
+  max-width: 25%;
+}
+h3{
+  padding-right: 1.2rem;
+}
+
+
+.talk-title {
+  font-size: 7.5vw;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-decoration: underline;
+  line-height: 1.075;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: -5rem;
+  color: #000000;
+}
+.title-talk-h4{
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+.blog-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 72%;
+  margin-top: -14rem;
+}
+.blogimg {
+  width: 23.125rem;
+  height: 19.0625rem;
+}
+.blog-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.image-box {
+  display: flex;
+  margin: 2.2rem;
+  flex-direction: column;
+}
+.image-box:hover {
+  border: box-shadow;
+  -webkit-box-shadow: 0 7px 4px #777;
+  -moz-box-shadow: 0 7px 4px #777;
+  box-shadow: 0 7px 4px #777;
+  cursor: pointer;
+}@media only screen and (max-width: 1200px) {
+  .image-box{
+    margin: 2.2rem 0 0 0;
+  }
+  .blog-more{
+    margin-top: -8rem;
+  }
+}
+.img-blurb {
+  height: 5.75rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+}
+.blurb-h3{
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left:0.6rem;
+}
+
+.date{
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  padding-bottom: 0.5rem;
+  padding-left:0.2rem;
+  display: block;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4a4a;
+ 
+
+}
+.read-more {
+  border: none;
+  color: white;
+  background-color: black;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 3.2rem;
+  align-self: center;
+  margin-top: 8.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.blog-h1 {
+  font-size: 5.625vw;
+  line-height: 1.4333333333333333;
+  letter-spacing: -0.3262rem;
+  transform: translateY(3rem);
+}
+.newsletter {
+  background-image: url(img/11.png);
+  background-size: cover;
+  width: 100vw;
+
+  height: 86vh;
+}
+
+
+
+.BUSINESS-OPPORTUNITI {
+  width: 956px;
+  height: 24px;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.414286px;
+  text-align: right;
+  color: #000000;
+}
+
+/* Text styles */
+
+.Large-title {
+  font-family: "Oswald";
+  font-size: 90px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4333333333333333;
+  letter-spacing: -0.2199999988079071px;
+  color: #000000;
+}
+
+.Text {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+
+.Call-to-Action-1 {
+  font-family: Oswald;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.7585714px;
+  color: #000000;
+}
+
+h2 {
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.59px;
+  color: #000000;
+}
+
+h3 {
+  font-family: Oswald;
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1893827px;
+  color: #000000;
+}
+
+.H3-invert {
+  font-family: Oswald;
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1893827px;
+  color: #ffffff;
+}
+
+.Text-invert {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.59px;
+  color: #ffffff;
+}
+
+.H3-invert-button {
+  font-family: Oswald;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1311111px;
+  color: #ffffff;
+}
+
+.Boutton {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3933333px;
+  color: #ffffff;
+}
+
+.Boutton-noir {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3933333px;
+  color: #000000;
+}
+
+.Call-to-action-2 {
+  font-family: Oswald;
+  font-size: 120px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.075;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.Date-blog {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+
+h1 {
+  font-family: Oswald;
+  font-size: 90px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 0.6555555px;
+  color: #000000;
+}
+
+.Text-H2 {
+  font-family: AvenirNext;
+  font-size: 37px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #667080;
+}
+
+.Field-formtext {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+
+.H2-Invert {
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.59px;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: Oswald;
+  font-size: 90px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4333333333333333;
+  letter-spacing: 3.375px;
+  color: #000000;
+}
+
+.Large-Title {
+  font-family: Oswald;
+  font-size: 160px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 6px;
+  color: #000000;
+}
+
+.Navigation {
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.414286px;
+  text-align: right;
+  color: #000000;
+}
+
+button {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3933333px;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: black;
+  margin-top: 20rem;
+  padding-bottom: 50px;
+  flex: 1;
+  width: 100vw;
+  height: 320px;
+
+  margin: 0;
+}
+.footer-h1 {
+  font-size: 90px;
+margin: 0;
+  font-weight: normal;
+  font-style: normal;
+  max-width: 100%;
+  font-stretch: normal;
+  line-height: 1.4333333333333333;
+  letter-spacing: -0.2199999988079071px;
+  text-align: left;
+  color: #ffffff;
+}
+.sub-div {
+  margin-left: 12%;
+  width: 80%;
+margin-right: auto;
+transform: translateY(39%);
+  flex: 0;
+  flex-direction: row;
+
+}
+.underline--magical {
+  background-image: linear-gradient(120deg, grey, grey);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+
+}
+
+input {
+  text-decoration: none;
+  flex: 0 0 40%;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  box-shadow: none;
+  border: none;
+  align-items: center;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+   
+}
+input:focus{
+  border: none;
+  box-shadow: none;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+
+}
+.arrow{
+  
+  margin-left: 9rem;
+}
+@media only screen and (max-width: 1200px) {
+  .arrow{ margin-left: 6rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .arrow{ margin-left: 4rem;
+  }
+}
+.submit-form{
+  width: 100%;
+}
+.sub-span {
+  display: inline-block;
+  flex-direction: row;
+  width: 40%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.sub-h3 {
+  opacity: 0.6;
+  display: inline-block;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}

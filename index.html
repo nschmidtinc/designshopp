@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="jquery.min.js"></script>
+
+    <title>Document</title>
+    <form action="test-country_province.php" method="post"></form>
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#country').on('change', function () {
+                var countryID = $(this).val();
+                if (countryID) {
+                    fetch("./getCountries", {
+                        headers: {
+                            Accept: "application/json",
+                            "Content-Type": "application/json"
+                        },
+                        method: "get",
+                    })
+
+                } else {
+                    $('#state').html('<option value="">Select country first</option>');
+                    $('#city').html('<option value="">Select state first</option>');
+                }
+            });
+
+            $('#state').on('change', function () {
+                var stateID = $(this).val();
+                if (stateID) {
+                    $.ajax({
+                        type: 'POST',
+                        url: 'test-country-province.php',
+                        data: 'state_id=' + stateID,
+                        success: function (html) {
+                            $('#city').html(html);
+                        }
+                    });
+                } else {
+                    $('#city').html('<option value="">Select state first</option>');
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body clas="col-small-12">
+    <div class="container col-small-12">
+        <section class=" Rectangle col-small-12">
+
+            <span class="heading-holder col-medium-4 col-large-4">
+
+                <nav class="Behind-the-Scene-Eve">
+                    <a class="side-nav-link">Behind the Scene</a>
+                </nav>
+                <nav class="Behind-the-Scene-Eve">
+                    <a class="side-nav-link">Events</a>
+                </nav>
+                <nav class="Behind-the-Scene-Eve">
+                    <a class="side-nav-link">Blog</a>
+                </nav>
+            </span>
+            <!-- png -->
+
+            <img src="img/logo.png" srcset="img/logo.png,
+        img/logo.png" class="Logo">
+
+            <!-- svg -->
+
+            <!-- <img src="img/Logo (1).svg" class="Logo"> -->
+            <span class="heading-holder">
+                <nav class="Behind-the-Scene-Eve col-small-12 col-medium-3 col-large-">
+                    <a class="side-nav-link">Business Opportunities</a>
+                </nav>
+                <nav class="Behind-the-Scene-Eve">
+                    <a class="side-nav-link">Podcasts</a>
+                </nav>
+                <nav class="Behind-the-Scene-Eve">
+                    <a class="side-nav-link">Let's Talk</a>
+                </nav>
+            </span>
+
+        </section>
+        <section class="  Banner col-small-12">
+            <img class="Signature" src="img/10.png" srcset="img/10.png, img/l10.png">
+            <div class="font-box-div">
+
+                <h1 class="font-box col-medium-3"> JOSEF
+                </h1>
+                <h1 class="font-box col-small-10 col-medium-10 col-large-3"> AZAM</h1>
+                <div class="text-box-1">
+                    <div class="inner-div">
+                        <h3 class="text-box-h3">Lorem Ipsum</h3>
+                        <p class="text-box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisi risus, dignissim in iaculis a, eleifend
+                            vitae est. Curabitur pellentesque dolor a justo facilisis maximus. Curabitur purus tortor, fringilla
+                            id porta nec, consectetur sed ante. Etiam hendrerit in est et mollis. Fusce lectus ligula, vulputate
+                            a ornare at, vulputate ac mi. Nullam sodales nisl nec interdum pharetra. Integer imperdiet risus
+                            cursus, elementum nunc condimentum, eleifend elit. Nam dictum felis mauris, nec aliquam purus
+                            rutrum in. Nulla nunc nisi, viverra sed vehicula non, fermentum eu lorem. Nulla sed vestibulum
+                            lorem.
+                        </p>
+                        <h4 class="title-talk-h4">Let's Talk</h4>
+                    </div>
+                </div>
+
+                <div class="photos">
+                    <img src="img/12.png" srcset="img/18.png,
+                        img/12.png" class="profile col-medium-4">
+                    <img src="img/12.png" srcset="img/12.png,
+        img/12.png" class="building col-medium-8">
+
+                    <img src="img/page1.png col-medium-3" srcset="img/page1.png,
+        img/12.png" class="goodthings">
+                    <div class="montage-div">
+                        <blockquote></blockquote>
+                        <h3 class="text-box-h3-montage">Lorem Ipsum Quote Lorem</h3>
+                        <h3 class="text-box-h3-montage"> Ipsum, Lorem Ipsum,</h3>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <section/>
+            <section class="col-small-12 Banner2">
+                <h1 class="talk-title">Let's Talk</h1>
+                <div class="blog-more col-medium-10">
+                    <h1 class="blog-h1">BLOG</h1>
+                    <button class="read-more">Read More</button>
+                </div>
+                <div class="blog-images">
+                    <div class="image-box col-small-10 col-medium-6">
+                        <img src="img/9.png" class="blogimg">
+                        <div class="img-blurb">
+
+                            <h3 class="blurb-h3">Lorem Impsum
+                                <span class="date"> September 4, 2017</span>
+                                <h3>&rarr;</h3>
+
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="image-box col-small-10 col-medium-6">
+
+                        <img src="img/5.png" alt="" class="blogimg">
+                        <div class="img-blurb">
+                            <h3 class="blurb-h3">Lorem Ipsum
+                                <span class="date"> September 4, 2017</span>
+                                <h3>&rarr;</h3>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="image-box col-small-10 col-medium-6">
+
+                        <img src="img/15.png" alt="" class="blogimg">
+                        <div class="img-blurb">
+                            <h3 class="blurb-h3">Lorem Impsum
+                                <span class="date"> September 4, 2017</span>
+                                <h3>&rarr;</h3>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+            <section class="col-small-12 follow">
+                <div class="followme-div">
+                    <img src="img/2.svg" class="follow-svg responsive-img">
+                    <h3 class="email">@JOSEF.AZAM</h3>
+                </div>
+
+            </section>
+
+            <section class="photo-album-div">
+                <div class="album-top">
+                    <img class="album-1 col-medium-2" src="img/16.png">
+                    <img class="album-1 col-medium-2" src="img/8.png">
+                </div>
+                <div class="album-top">
+                    <img class="album-1-dog col-medium-1 col-small-2" src="img/6.png">
+                    <img class="album-1-wisdom col-medium-2" src="img/4.png">
+                    <img class="album-1-ball col-medium-2" src="img/3.png">
+                    <img class="album-1-knowledge col-medium-2" src="img/17.png">
+                </div>
+            </section>
+            <section class=" col-small-12 footer">
+                <div class="sub-div">
+                    <form class="submit-form">
+                        <h1 class="footer-h1">Subscribe</h1>
+                        <span class="sub-span underline--magical">
+                            <h3 class="sub-h3">First Name</h3>
+                            <input>
+                        </span>
+                        <span class="sub-span underline--magical">
+                            <h3 class="sub-h3">Last Name</h3>
+                            <input>
+
+                        </span>
+                        <img class="arrow" src="img/arrow.png">
+                    </form>
+                </div>
+            </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
